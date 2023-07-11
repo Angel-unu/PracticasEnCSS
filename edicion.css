@@ -1,3 +1,14 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap'); /*Otra manera de cambiar de letras*/
+
+/*
+Si se tiene una tipografia paga se utiliza:
+@font-face {
+    font family: 'nombre que elegis para la letra';
+    src: url(ubicacion del alchivo, copiar 2 veces);
+}
+*/
+
+
 /*Podemos crear cuantos archivos CSS necesitemos, aunque recomendamos utilizar uno*/
 
 /*selector:
@@ -8,16 +19,52 @@
 /*tipos de selectores: 
 */
 
+body{
+    background-color: rgba(45, 3, 118, 0.4);
+    color: rgba(45, 3, 118, 0.5);
+}
+
+
+
 /*
 Etiquetas: 
 */
 
-h2{
-    color: green;
-}
 
 h1{
-    color: rgb(38, 255, 0);
+    color: #000000; /*Escritura Hexadecimal*/
+    background-color: #a80c77;
+    font-weight: 100;/*Hace la letra mas fina o mas gruesa*/
+    font-size: 12px;
+    text-transform: uppercase;/*hace la letra mas ancha*/
+    background-color: pink;
+    /*padding: 20px; en los 4 extremos(arriba-abajo-latelares.*/
+    padding: 20px 40px;/*Relleno vertical; relleno horizontal*/
+    width: 100px;/*cambia tamaño de la caja*/
+}
+
+h2{
+    color: #17c0eb;
+    font-family: 'Oswald', sans-serif; /*Cambiado de letra*/
+    /*Tamaños tipograficos: 14px - 12px como minimo
+    
+    Unidades em rem
+    1 em -> 16px
+    2 em -> 32px
+    */
+    font-size: 12px; /*tamaño de la letra*/
+    background-color: #ada111;
+    padding: 20px 15px 20px 15px;
+    width: 100px;
+}
+
+
+/*Cambia de letra de todo el HTML*/
+
+*{
+    font-family: 'Bacasime Antique', serif;
+    padding: 0;/*quita los bordes del body*/
+    margin: 0;
 }
 
 /*
@@ -25,13 +72,41 @@ Clases:
 */
 
 .parro{
-    color: rgb(43, 226, 128);
+    color: rgb(0, 0, 128); /*rgb, Otra manera de hacer colores, red, green, blue*/
+    /*rgba si agregamos el a genera transparencia en el color del 0.1 al 0.9*/
+}
+
+img{
+    width: 50%;
+    height: 160px;
+
+}
+
+.gatito{
+    width: 200px;
+    margin: 40px 20px; /*Genera espacio entre cada etiqueta y hace mas grande la caja contenedora*/
+    border:5px black solid; /*dashed, */
 }
 
 /*
-id
+id-Elemento
 */
 
 #existe{
     color: brown;
 }
+
+/*
+Selectores Combinados
+Ancho de un elemento -> width
+*/
+
+/*.gatito > img{
+    width: 50%;medidas con procientos %
+}
+*/
+
+/*
+img ~ button{}
+p+ button{}
+*/
