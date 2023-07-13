@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.seleccion-menu{
+    background-color: #78C1F3;
+    padding: 5px 5px 0px 10px;
+    
+}
+
+ul{
+
+    list-style-type: none;
+    display: inline-block;
+/*
+    Etiqueta que podemos usar para modificar el listado
+    list-style: ;
+*/
+}
+/*Etiqueta numerica cambiamos simbolos
+ol{
+    list-style:
+}*/
+
+/*Listado ordenado*/
+.item-menu{
+    display: inline-block;
+    padding: 5px;
+}
+
+/*Logo imag*/
+
+#logo{
+   margin-left: 20px;
+}
+
+.letras{
+    text-align: center;/*para centrar*/
+    margin-left: 400; 
+}
+
+.decoracion{
+    font-family: 'VT323', monospace;
+    color: #1D5B79;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+/*----Clasificacion Robotica-----*/
+
+.tarjetas{
+    width: 400px;/*modica el espacio que tiene la caja y lo que contiene tambien se ajusta*/
+    height: 150px;
+    margin-bottom: 20px; /*genera distancia en el inferior*/
+    border: 4px solid #9BE8D8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button{
+    padding:5px;
+    width: 100px;
+    text-transform: uppercase;/*Hace la letra en MAYUSCULA*/
+    background-color: #61e8cd;
+    color: #001C30;
+    margin-top: 15px;
+    border-radius: 5px;
+}
