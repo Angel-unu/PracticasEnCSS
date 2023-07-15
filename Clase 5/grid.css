@@ -1,0 +1,23 @@
+main{
+    background-color: crimson;
+    height: 400px;
+    display: grid ; /*Padre, armar la grilla para ubicar a los elementos hijos*/
+    /*grid-template-columns: 200px 200px 200px; las columnas de la grilla*/
+
+    grid-template-columns: repeat(3,150px);/*es lo mismo que el otro solo mas facil de hacerlo*/
+
+
+    /**grid-template-rows: 200px 100px;la fila de la grilla*/
+
+    row-gap: 20px;/*Espacio entre filas*/
+    column-gap: 40px; /*Espacio entre columnas*/
+}
+
+.cuadro{
+    width: 150px;
+    justify-self: center;/*justify-self y align-self funcionan con grid para alinear a los hijos dentro de los caselleros*/
+    height: 150px;
+    background-color: brown;
+    border: 2px solid black;
+
+}

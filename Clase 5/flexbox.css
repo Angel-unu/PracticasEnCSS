@@ -1,0 +1,59 @@
+.cuadro{
+    width: 150px;
+    height: 150px;
+    background-color:darkcyan;
+    border: 4px solid violet;
+}
+
+ul{
+    background-color: greenyellow;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 10px;/*genera espacio sin dañar el estilo de la pagina*/
+}
+
+li{
+    background-color: aqua;
+    border: 2px solid pink;
+    padding: 5px;
+}
+
+p{
+    margin: 0%;
+    background-color: darkorange;
+    border: 1px solid black;
+}
+
+.cuadro1{
+    background-color: darkslateblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cuadro2{
+    background-color: green;
+    align-self: flex-start;/**/
+
+/*No hace falta el display flex para que el hijo se comporte distinto*/
+}
+main{
+
+    background-color: aqua;
+    height: 400px;/*hace mas grande la caja para abajo*/
+
+    display: flex; /*Con esta etiqueta le decimos al padre (main) como tiene que ubicar a los hijos (div)*/
+
+    flex-direction: row;/*hace horizontal a los hijos*/
+
+    justify-content: space-between;/*->space-eventy los movemos sin necesidad de calcular*/
+
+    /*justify-content -> flex-start, flex-end, center, space-betwee, space-around, space-evenly son algunas*/
+
+    flex-wrap: wrap;/*indicar que es mas importante si el tamaño de los hijos o la direccion*/
+
+    align-items: center; /*stretch->ocupa todo lo que no esta definido*/
+
+}
+
