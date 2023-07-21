@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Formulario en CSS</h1>
+    <h2>Relleno porque, no?</h2>
+<section>
+    <form action="API" method="post"><!--API->Intermediario-->
+        
+    <form action=""></form>
+
+    <div>
+        <label for="nombre">Nombre: </label>
+        <input type="text" class="input-text" id="nombre" required/><!--FOR tiene que coincidir con el id para marcar azul lo que tiene que completar el usuario-->
+        <!--required, Obligatorio que complete esta casilla-->
+    </div> 
+
+    <div>
+        <label>Apellido: </label><!--Sirve para indicar que colocar en el formulario-->
+        <input type="text" class="input-text" placeholder="Apellido"/> <!--placeholder sirve para ayudar al usuario poniendo un ejemplo-->
+
+        <!--
+        Otros input tambien se puede aplicar for
+        <input type="email" id=""/>
+        <input type="pasasword id=""/>-->
+    </div>
+
+    <div>
+        <label for="contra">contraseña </label>
+        <input type="password" name="contraseña" id="contra" minlength="8"/><!--minlength limita los digitos-->
+    </div>
+    <div>
+        <label for="">Eliga un turno</label>
+    </div>
+    <div>
+        
+
+        <label for="">Mañana: </label>
+        <input type="radio" name="turno" id="TM"/><!--name sirve para que se seleccione uno y no todo import--> 
+    </div>
+        
+    <div>
+        <label for="">Tarde: </label>
+        <input type="radio" class="input-radio" name="turno" id="TT"/><!--name sirve para que se seleccione uno y no todo import-->
+    </div>
+        
+    <div>
+        <label for="e">noche: </label>
+        <input type="radio" class="input-radio" name="turno" id="TN"
+        value="Turno.Noche"/><!--name sirve para que se seleccione uno y no todo import-->
+    </div>
+    
+    <label for="">Elija en que curso quiere inscribirse: </label>
+    <div class="input-area">
+        <label for="web2">Prog. Web Inicial</label>
+        <input type="checkbox" class="input-radio" name="curso" id="web2" value="Prog.Web.Inicial"/>
+    </div>
+
+    <div class="input-area">
+        <label for="web">Prog. Web Avanzado</label>
+        <input type="checkbox" name="curso" id="web" value="Prog.Web.Avanzada"/><!--Value sirve para saber que selecciono el usuario-->
+    </div>
+
+    <div>
+        <label for="pais">pais</label>
+        <select name="nacionalidad" id="pais">
+            <option value="ARGENTINA">ARGENTINA</option>
+            <option value="Chile">Chile</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Mexico">Mexico</option>
+            <option value="ARGEN">ARGEN</option>
+        </select> 
+    </div>
+    <label for="">Registre Cuantas entradas Quiere:</label>
+    <input type="number" name="entrada" id="cine" max="4">
+
+        <div class="input-area">
+        <label for="comentarios">Deje su opinion</label>
+        <p>como maximo 20 caracteres </p>
+        <textarea name="coment" id="comentarios" maxlength="20"></textarea>
+
+    </div>
+    <input type="submit" value="Enviar"> 
+    <!--<button type="submit">Enviar</button>submit envia todo y tambien lo borra-->
+    </form> 
+</section>
+    
+</body>
+</html>
+
+<!-- 
+    SE UTILIZA PARA LA ETIQUETA form method="get o post"
+
+    peticiones -> portoolo HTTP
+    GET -> pedimos informacion, que nos traiga algo(documentos, mensajes, etc..)
+    POST -> mandamos informacion
+    DELETE, PUT, PATCH
+-->

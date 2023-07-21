@@ -1,0 +1,41 @@
+h1:hover, h2:hover{
+    color: blueviolet; /*selector:pseudoclase{
+                            propiedades
+                          }*/
+}
+
+h1,h2{
+    text-transform: uppercase;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50vw;/*50% del ancho de pantalla "vw"*/
+    border: solid 5px green;
+    padding: 5px;
+}
+
+.input-text{
+    width: 70%;/*Ancho*/
+    height: 30px;/*Largo*/
+    border: 2px solid lightblue;
+    border-radius: 8px;/*bordes*/
+
+}
+
+.input-radio:checked{
+    background-color: pink;
+}
+
+/*
+pseudoclase, cuando pase una accion se cambie o modifique, ejem
+
+selector:pseudoclase{
+    propiedades
+}
+
+Cuando el mause pase por encima del elemento que tenga este selector
+cuando se pulse sobre el elemento que tenga este selector..
+*/

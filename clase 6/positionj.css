@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+*{
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;/*separa contenedores del hijo*/
+    align-items: center;
+    background-color: aqua;
+    width: 400px;
+    margin: auto;
+    position: relative;/*Lo ponemos para que tome como 0,0 el extremo superior del main. sino, tomatia como 0,0 al body*/
+
+}
+
+p{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cubo{
+    width: 150px;/*Ancho*/
+    height: 160px;/*Largo*/
+    border: solid 2px rgb(0, 0, 0);   
+}
+
+.static{
+    background-color: cadetblue;
+    position: static; /*position: static se mantiene estatico*/
+    z-index:0;/*Sirve para sobreponer por encima de otra caja dependiendo del numero que se designe*/
+}
+
+.relative{
+    background-color: salmon;
+    position: relative;/*podemos mmoverlo y el espacio que quede no se va ocupar por ningun otro*/
+    left: 100px;
+    bottom: 100px;
+    /*Position: atributo, podemos aplicar top botton left right para mover la caja*/
+}
+
+.absolute{
+    background-color: darkorchid;
+    position: absolute;
+    top: 50px;
+    left:100px;
+    z-index: 1;
+}
+
+.fixed{
+    background-color: sienna;
+    position: fixed;/*saca del plano no deja espacio que ocupa(absolute pero queda fijo en la coordenada, tomando como 0,0 la pantalla)*/
+    right: 10px;
+    bottom: 40px;
+    z-index: 4;
+}
+
+.sticky{
+    background-color: gold;
+    position: sticky;/*se comporta estatico, y al hacer scroll nos sigue como el fixed*/
+    top: 0px;
+    z-index: 5;
+}
