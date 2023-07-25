@@ -100,6 +100,7 @@ h3{
     border: 4px solid #9BE8D8;
     border-radius: 10px;
     text-align: center;
+    box-sizing:border-box;/*ALINIA DE FORMA CORRECTA IMPORTANTE*/
 
     background: linear-gradient(/*deg--> grados de inclinacion*/45deg, #A0C49D 30%, #E1ECC8 50%, #F7FFE5 100%); /*con esto generamos un*/ /*con los % generamos cual domine mas*/
 }

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima&display=swap');
+
+
+/*AJUSTA LA PAGINA Y QUIDA LOS BORDES PRETERMINADOS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*alinia las cajas de forma que quede simetrico, o sea que toma el padding y el margin y lo alinea para que quede simetrico*/
+}
+
+body{
+    background-color: #333333;
+    font-family: 'Lunasima', sans-serif;
+    
+    color: aliceblue;
+}
+
+
+/*-------MENU PRINCIPAL--------*/
+.logo{
+    width: 200px;/*Ancho*/
+}
+
+/*----SECCION TARJETA-----*/
+
+.tarjeta{
+    width: 300px;
+    border: 5px solid lightblue;
+    background-color: #232323;
+    flex-direction: column;/*Declarando al padre*/
+    gap: 10px;
+    align-items: center;
+    justify-self: center;
+}
+
+.tarjeta>img{
+    width: 100%;
+    border: 3px solid red;
+}
+
+.boton{
+    padding: 5px;
+    background-color:cadetblue;
+    color: azure;
+      
+
+}
