@@ -42,6 +42,22 @@ ol{
     padding: 5px;
 }
 
+.productos{
+    list-style-type: none;
+    background-color: pink;
+    color:black;
+    display: none;
+    position: absolute;
+    top:40px
+}
+.item-menu{
+    position: relative;
+    cursor: pointer;
+}
+.item-menu:hover>.productos{
+    display: block;
+}
+
 /*Logo imag*/
 
 #logo{
