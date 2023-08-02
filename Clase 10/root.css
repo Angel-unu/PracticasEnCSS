@@ -1,0 +1,28 @@
+
+/*----root propiedad que se utiliza para declarar una variable;valor que permita ser usada en varias etiquetas de css----*/
+:root{
+    --colorprincipal:#F90;
+    --tamañoletra: 15px #A88;/*Se puede poner mas valores*/
+}
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tarjeta{
+    border: solid 3px green;
+    font-size: var(--tamañoletra);/*var esencial para el funcionamiento de root*/
+    width: 140px;
+    margin: 40px auto;/*auto centra las cajas*/
+    text-align: center;/*la letras y lo que contenga*/
+}
+
+h1{
+    color: var(--colorprincipal);
+}
+
+button{
+    padding: 10px;/*Hace mas ancho la caja */
+    background-color: var(--colorprincipal);
+    font-size: var(--tamañoletra);
+}
