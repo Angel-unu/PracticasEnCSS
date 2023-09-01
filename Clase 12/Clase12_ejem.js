@@ -25,7 +25,7 @@ const alumnos=[]
 alumnos.push("Sole","Santiago");//Tiene un orden
 alumnos.push("Manuel");
 
-//array.unshift(valor -> agrega al inicio de la lista, camba los indices que tenian
+//array.unshift(valor -> agrega al inicio de la lista, cambia los indices que tenian
 
 alumnos.unshift("Carla");//No tiene un orden 
 
